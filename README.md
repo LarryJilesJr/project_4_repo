@@ -15,6 +15,8 @@ https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-dis
 
 ### Process
 
+### First Notebook
+
 We will start explaining our first notebook "Project_4". This first notebook explores heart disease data, starting with loading and preprocessing steps. It addresses various risk factors like smoking, diabetes, and teeth removal through SQL queries and visualizations. The analysis provides insights into how these factors may affect heart disease risk. More detailed explanations follow below.
 
 So to start we installed essential libraries for our project. We added findspark to initialize Spark, pyspark for big data processing, pyarrow for data interchange, fastparquet for handling Parquet files, and plotly for interactive visualizations. These installations prepare our environment for the data processing and analysis tasks ahead.
@@ -53,8 +55,8 @@ We removed any duplicate rows from the heart disease DataFrame to ensure data qu
 
 ![duplicates](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/duplicates.png?raw=true)
 
-- **Queries and Visualizations:**
 
+- **Queries and Visualizations:**
 
 For our first query, we analyzed the distribution of heart attacks by gender in our dataset. First, we grouped the data by gender to count occurrences and total heart attacks for each group. Then, we determined which gender had more heart attacks, revealing males are more at risk. This analysis was visualized using a line plot that highlights the total number of heart attacks for males and females, clearly showing the differences and emphasizing the risk assessment visually.
 
@@ -125,7 +127,9 @@ This is our plot:
 
 ![PLOT8](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot8.png?raw=true)
 
- Now we are continuing to explain our second notebook "project_4_model". This notebook focuses on building and training a deep learning model using TensorFlow to predict the risk of heart disease based on the preprocessed data.
+### Second Notebook
+
+Now we are continuing to explain our second notebook "project_4_model". This notebook focuses on building and training a deep learning model using TensorFlow to predict the risk of heart disease based on the preprocessed data.
 
 We started this notebook by preparing our data analysis and machine learning tasks by importing essential libraries such as Pandas for data manipulation, scikit-learn for model selection and preprocessing, and TensorFlow for building and training machine learning models. We also load a dataset from a CSV file into a Pandas DataFrame to begin our data exploration.
 
