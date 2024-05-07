@@ -14,7 +14,6 @@ Our project seeks to analyze personal key indicators of heart disease using a da
 https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease (specifically the 2022 dataset)
 
 ### Process
-So we work in three different notebooks and we will be expalining the process of each one below.
 
 We will start explaining our first notebook "Project_4". This first notebook explores heart disease data, starting with loading and preprocessing steps. It addresses various risk factors like smoking, diabetes, and teeth removal through SQL queries and visualizations. The analysis provides insights into how these factors may affect heart disease risk. More detailed explanations follow below.
 
