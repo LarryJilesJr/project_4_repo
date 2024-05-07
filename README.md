@@ -125,3 +125,98 @@ This is our plot:
 
 ![PLOT8](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot8.png?raw=true)
 
+ Now we are continuing to explain our second notebook "project_4_model". This notebook focuses on building and training a deep learning model using TensorFlow to predict the risk of heart disease based on the preprocessed data.
+
+We started this notebook by preparing our data analysis and machine learning tasks by importing essential libraries such as Pandas for data manipulation, scikit-learn for model selection and preprocessing, and TensorFlow for building and training machine learning models. We also load a dataset from a CSV file into a Pandas DataFrame to begin our data exploration.
+
+![ Import notebook2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/Import%20notebook2.png?raw=true)
+
+In this code, we streamline our dataset by removing columns that are not beneficial for our analysis. This involves deleting specific columns related to physical and mental health days, last checkup times, smoker status, and e-cigarette usage from the DataFrame, ensuring that our dataset is more focused on relevant features for modeling heart disease.
+
+![dropping non-beneficial](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/dropping%20non-beneficial.png?raw=true)
+
+In this code, we're dropping several additional columns from the DataFrame heart_disease_df. These columns include 'HadDepressiveDisorder', 'DeafOrHardOfHearing', 'BlindOrVisionDifficulty', 'DifficultyConcentrating', 'DifficultyWalking', 'DifficultyDressingBathing', and 'DifficultyErrands'. After dropping these columns, we're displaying the first three rows of the updated DataFrame using head().
+
+![dropping additional](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/dropping%20additional.png?raw=true)
+
+We converted categorical responses 'Yes' and 'No' to numerical values across multiple health-related columns in our dataset, facilitating easier analysis and model training. This includes health conditions like heart attack, stroke, diabetes, and other factors like alcohol consumption and flu vaccination status. After the replacement, the first few rows of the modified DataFrame are displayed to verify the changes.
+
+![Replace 2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/Replace%202.png?raw=true)
+
+
+In this code, we assess the diversity of data by calculating the number of unique values present in each column of the DataFrame, which helps identify the range of data variation and the presence of categorical data.
+
+![determining values](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/determining%20values.png?raw=true)
+
+Here, we're examining the distribution of BMI values in a dataset called heart_disease_df. We're using the value_counts() method to count the occurrences of each unique BMI value.
+
+![looking at BMI](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/looking%20at%20BMI.png?raw=true)
+
+In this code, we're filtering the previously obtained BMI value counts to identify only those BMI values that have a count greater than 100.
+
+![looking greater](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/looking%20greater.png?raw=true)
+
+In this segment, we're identifying BMI values that occur less than or equal to 100 times and storing their indices in a list called names_to_replace. Then, we're replacing these values with 'Other' in the DataFrame heart_disease_df. Finally, we're verifying the success of the binning process by checking the updated value counts of the 'BMI' column.
+
+![determining values that can be replaced](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/determining%20values%20that%20can%20be%20replaced.png?raw=true)
+
+Here, we're examining the distribution of 'State' values in the dataset heart_disease_df using the value_counts() method.
+
+![looking at state](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/looking%20at%20state.png?raw=true)
+
+In this code, we're setting a cutoff value of 5000 occurrences and creating a list called states_to_replace containing the state values that occur less than this cutoff. Then, we're replacing these state values with 'Other' in the DataFrame heart_disease_df. Finally, we're verifying the success of the binning process by checking the updated value counts of the 'State' column.
+
+![choose a cutoff](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/choose%20a%20cutoff.png?raw=true)
+
+In this section, we're examining the distribution of 'WeightInKilograms' values in the dataset heart_disease_df using the value_counts() method.
+
+![weightinkilograms](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/weightinkilograms.png?raw=true)
+
+In this code, we're setting a cutoff value of 5000 occurrences and creating a list called classifications_to_replace containing the 'WeightInKilograms' values that occur less than this cutoff. Then, we're replacing these values with 'Other' in the DataFrame heart_disease_df. Finally, we're verifying the success of the binning process by checking the updated value counts of the 'WeightInKilograms' column.
+
+![choose cutoff 2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/choose%20cutoff%202.png?raw=true)
+
+We're creating an array named categorical_variables that stores the names of categorical variables in the DataFrame heart_disease_df. These variables are identified based on their data type being 'object'.
+
+![array](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/array.png?raw=true)
+
+In this code, we're converting categorical data into numeric format using the pd.get_dummies() function, which creates dummy variables for each category of the categorical features. The resulting DataFrame, new_heart_disease_df, contains these dummy variables. We're displaying the first few rows of this updated DataFrame to examine the changes.
+
+![convert categorical](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/convert%20categorical.png?raw=true)
+
+In this part, we're splitting our preprocessed data into two arrays: y contains the target variable 'HadHeartAttack', while X contains all the features except 'HadHeartAttack'.
+
+Then, we further split the preprocessed data into training and testing datasets using train_test_split(). The feature arrays X_train and X_test along with the target arrays y_train and y_test are created, ensuring that the class distribution is stratified based on the target variable 'HadHeartAttack'.
+
+![split2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/split2.png?raw=true)
+
+
+- **Compile, Train and Evaluate the Model:**
+
+This code creates a neural network with layers for processing data. There are layers for receiving input, some layers for processing, and one layer for producing output. Each layer has different functions for handling information.
+
+![define the model](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/define%20the%20model.png?raw=true)
+
+This was the result:
+
+![results](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/results.png?raw=true)
+
+Here, we're compiling the neural network model. We specify the loss function as "binary_crossentropy", the optimizer as "adam", and we're interested in tracking the accuracy metric during training.
+
+![compiling the model](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/compiling%20the%20model.png?raw=true)
+
+Here, we're training the compiled neural network model nn_model using the training data X_train_scaled and y_train. We're running the training process for 50 epochs.
+
+![training the model](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/training%20the%20model.png?raw=true)
+
+This code evaluates the trained neural network model using the test data (X_test_scaled and y_test). It calculates the model's loss and accuracy on the test dataset and prints out these values.
+
+![evaluate the model](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/evaluate%20the%20model.png?raw=true)
+
+This is the results: 
+
+![results 2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/results%202.png?raw=true)
+
+This code exports the trained neural network model to an HDF5 file named 'Heart_disease_model.h5'. It saves the model to the specified filename and prints a confirmation message indicating where the model was saved.
+
+![exporting](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/exporting.png?raw=true)
