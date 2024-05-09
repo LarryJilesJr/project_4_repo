@@ -301,7 +301,7 @@ Cons:
 
 ### Conclusions
 
--Superior Model Performance: The second model, using advanced VGG19, outperforms the first in accuracy due to its sophisticated image processing capabilities.
+-Our second model would be superior using advanced VGG19, if we had more data, but in this case our first model outperforms in accuracy.
 
 -Importance of Data Quality: Effective data preprocessing is crucial as both models' performance heavily relies on the quality and preparation of the input data.
 
