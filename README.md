@@ -65,7 +65,7 @@ For our first query, we analyzed the distribution of heart attacks by gender in 
 
 This is our plot:
 
-![Plot1](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot1.png?raw=true)
+![male/female](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/males:females.png?raw=true)
 
 For our second query, we examined how age influences the risk of heart disease by creating a temporary view of our DataFrame and executing a SQL query to calculate the average heart attack occurrence by age category. The results, visualized in a scatter plot, highlight the increasing risk of heart disease with age, with older age groups showing significantly higher risks. This analysis helps in understanding age-related patterns in heart disease incidence within the dataset.
 
@@ -73,32 +73,25 @@ For our second query, we examined how age influences the risk of heart disease b
 ![V2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/V2.png?raw=true)
 
 This is our plot:
-![Plot2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot%202.png?raw=true)
+![age](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/age:bar.png?raw=true)
 
-For our third query, we assessed the diversity of race and ethnicity in our dataset by querying the count of different groups, creating a temporary view for these operations. The query results were then visualized using a bar plot to clearly display the distribution of individuals across various race and ethnicity categories, highlighting demographic diversity within our data.
 
-![Q3](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Q3.png?raw=true)
-![V3](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/V3.png?raw=true)
-
-This is our plot: 
-![Plot3](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot3.png?raw=true)
-
-For our fourth query, we analyzed how race and ethnicity correlate with heart disease prevalence. A SQL query was executed to calculate average heart disease risk for each racial and ethnic group. The results were visualized in a bar plot, displaying the prevalence rate across different groups to highlight disparities in heart disease risk based on race and ethnicity.
+For our third query, we analyzed how race and ethnicity correlate with heart disease prevalence. A SQL query was executed to calculate average heart disease risk for each racial and ethnic group. The results were visualized in a bar plot, displaying the prevalence rate across different groups to highlight disparities in heart disease risk based on race and ethnicity.
 
 ![Q4](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Q4.png?raw=true)
 ![V4](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/V4.png?raw=true)
 
 This is our plot: 
 
-![Plot4](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot4.png?raw=true)
+![ethnicity](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/ethnic.png?raw=true)
 
-For our fith query, we investigated the impact of BMI on heart disease risk by calculating average BMI and heart disease prevalence from our dataset. A SQL query grouped by heart attack occurrence provided insights into how BMI correlates with heart disease, with the results showcasing variations in average BMI among those with and without heart disease.
+For our fourth query, we investigated the impact of BMI on heart disease risk by calculating average BMI and heart disease prevalence from our dataset. A SQL query grouped by heart attack occurrence provided insights into how BMI correlates with heart disease, with the results showcasing variations in average BMI among those with and without heart disease.
 ![Q5](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Q5.png?raw=true)
 ![V5](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/V5.png?raw=true)
 
 This is our plot: 
 
-![Plot5](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot5.png?raw=true)
+![BMI](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/bmiaverage.png?raw=true)
 
 For our sixth query, we explored the impact of smoking on heart disease risk by executing a SQL query to assess the prevalence of heart disease across different smoking statuses. This analysis highlights how smoking behavior correlates with heart disease, emphasizing the importance of smoking cessation in reducing heart disease risk.
 
@@ -278,9 +271,9 @@ And this was our results:
 
 ![result m2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/result%20m2.png?raw=true)
 
-### Pros and Cons per Model
+## Pros and Cons per Model
 
-## Machine Learning Model 1 (Predictive Analytics in Healthcare: Unveilig Insights into Heart Disease Risk, Deep Learning Model)
+### Machine Learning Model 1 (Predictive Analytics in Healthcare: Unveilig Insights into Heart Disease Risk, Deep Learning Model)
 
 Pros:
 
@@ -293,7 +286,7 @@ Cons:
 *Complexity: Requires significant preprocessing of data, which can be time-consuming and resource-intensive.*
 *Dependency on Data Quality: Highly dependent on the availability and accuracy of input data, which can affect its reliability.*
 
-## Machine Learning Model 2 (Heart Images Machine Learning)
+### Machine Learning Model 2 (Heart Images Machine Learning)
 
 Pros:
 
@@ -309,7 +302,9 @@ Cons:
 ### Conclusions
 
 -Superior Model Performance: The second model, using advanced VGG19, outperforms the first in accuracy due to its sophisticated image processing capabilities.
+
 -Importance of Data Quality: Effective data preprocessing is crucial as both models' performance heavily relies on the quality and preparation of the input data.
+
 -Healthcare Impact: These machine learning models demonstrate significant potential for improving early diagnosis and treatment of heart disease, highlighting the transformative impact of AI in healthcare.
 
 You can find the powerpoint by clicking at the URL. [URL]([URL_TO_POWERPOINT](https://docs.google.com/presentation/d/15HNU5THFQh5I-im8LF2gnfeBbU3lbYejorq5JHJM_kk/edit#slide=id.p))
