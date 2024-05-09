@@ -93,7 +93,7 @@ This is our plot:
 
 ![BMI](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/bmiaverage.png?raw=true)
 
-For our sixth query, we explored the impact of smoking on heart disease risk by executing a SQL query to assess the prevalence of heart disease across different smoking statuses. This analysis highlights how smoking behavior correlates with heart disease, emphasizing the importance of smoking cessation in reducing heart disease risk.
+For our fifth query, we explored the impact of smoking on heart disease risk by executing a SQL query to assess the prevalence of heart disease across different smoking statuses. This analysis highlights how smoking behavior correlates with heart disease, emphasizing the importance of smoking cessation in reducing heart disease risk.
 
 ![Q6](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Q6.png?raw=true)
 ![V6](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/V6.png?raw=true)
@@ -102,7 +102,7 @@ This is our plot:
 
 ![Plot6](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot6.png?raw=true)
 
-For our seventh query, we investigate the correlation between diabetes and heart disease by calculating the average prevalence of heart disease among individuals with and without diabetes. The results are displayed in a table format, followed by a stacked bar chart which visually represents the heart disease prevalence based on diabetes status.
+For our sixth query, we investigate the correlation between diabetes and heart disease by calculating the average prevalence of heart disease among individuals with and without diabetes. The results are displayed in a table format, followed by a stacked bar chart which visually represents the heart disease prevalence based on diabetes status.
 
 ![Q7](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Q7.png?raw=true)
 ![V7](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/V7.png?raw=true)
