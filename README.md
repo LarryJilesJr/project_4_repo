@@ -308,7 +308,7 @@ Cons:
 -Healthcare Impact: These machine learning models demonstrate significant potential for improving early diagnosis and treatment of heart disease, highlighting the transformative impact of AI in healthcare.
 
 
-##Our powerpoint is the following. [Our Presentation](https://docs.google.com/presentation/d/15HNU5THFQh5I-im8LF2gnfeBbU3lbYejorq5JHJM_kk/edit#slide=id.p)
+Our powerpoint is the following. [Our Presentation](https://docs.google.com/presentation/d/15HNU5THFQh5I-im8LF2gnfeBbU3lbYejorq5JHJM_kk/edit#slide=id.p)
  
 
 
