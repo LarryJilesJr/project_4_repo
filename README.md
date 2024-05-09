@@ -15,7 +15,7 @@ https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-dis
 
 ### Process
 
-### First Notebook
+### First Notebook (PySpark and SQL Queries)
 
 We will start explaining our first notebook "Project_4". This first notebook explores heart disease data, starting with loading and preprocessing steps. It addresses various risk factors like smoking, diabetes, and teeth removal through SQL queries and visualizations. The analysis provides insights into how these factors may affect heart disease risk. More detailed explanations follow below.
 
@@ -127,9 +127,31 @@ This is our plot:
 
 ![PLOT8](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/Plot8.png?raw=true)
 
-### Second Notebook
 
-Now we are continuing to explain our second notebook "project_4_model". This notebook focuses on building and training a deep learning model using TensorFlow to predict the risk of heart disease based on the preprocessed data.
+### Second Notebook (Heatmap)
+
+Now we are explaining the process of our second notebook which is all about creating our heatmap.
+
+So we start this by creating the Python script for the data preparation, this efficiently loads heart disease data, processes state-specific counts, and prepares the data in JSON format for web integration.
+
+![python script](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/python%20script.png?raw=true)
+
+After that we work on the HTML. HTML structures the webpage, incorporating CSS and Leaflet.js for dynamic map styling and functionalities.
+
+![HTML]([link](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/HTML.png?raw=true))
+
+And last but not least for the heatmap we work on the interactive map with JavaScript. JavaScript leverages Leaflet.js to visualize heart disease data on an interactive map, enhancing user engagement with dynamic markers and overlays
+
+![java](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/java.png?raw=true)
+
+This is how the map looks.
+
+![map look ](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/map%20look.png?raw=true)
+
+
+### Machine Learning Model 1 (Predictive Analytics in Healthcare: Unveilig Insights into Heart Disease Risk, Deep Learning Model)
+
+Now we are continuing to explain our notebook "project_4_model". This notebook focuses on building and training a deep learning model using TensorFlow to predict the risk of heart disease based on the preprocessed data.
 
 We started this notebook by preparing our data analysis and machine learning tasks by importing essential libraries such as Pandas for data manipulation, scikit-learn for model selection and preprocessing, and TensorFlow for building and training machine learning models. We also load a dataset from a CSV file into a Pandas DataFrame to begin our data exploration.
 
@@ -225,4 +247,72 @@ This code exports the trained neural network model to an HDF5 file named 'Heart_
 
 ![exporting](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/N2/exporting.png?raw=true)
 
-### Third Notebook
+
+### Machine Learning Model 2 (Heart Images Machine Learning)
+
+For our second machine learning model we started by installing libraries and importing the mdoules. Install the OpenCV library and import essential modules for handling file operations, image processing, and data manipulation.
+
+![ml2 libraries](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/ml2%20libraries.png?raw=true)
+
+After that we started by organizing the image data. We set up directory paths and define a function to categorize images as 'Healthy' or 'Unhealthy' based on their storage location, using OpenCV for image reading.
+
+![organize image](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/organize%20image.png?raw=true)
+
+Following that, our next step is compiling datagrames and exporting to excel. We merge categorized image data into test and training DataFrames and save these as Excel files to ensure data is stored and accessible for further analysis.
+
+![compiling](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/compiling.png?raw=true)
+
+The next step for this model is loading and configuring the VGG19 Model. We load and configure the VGG19 model pre-trained on ImageNet, setting up image data augmentation for enhancing model training, and prepare training and testing data generators.
+
+![VGG19](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/VGG19.png?raw=true)
+
+Following this step we started building and training the deep learning model. We customize the VGG19 model by adding new layers tailored for the specific classes in our dataset, compile the model, and train it using the prepared image data batches.
+
+![training](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/training.png?raw=true)
+
+Lastly, we evaluate the model performance. We valuate the trained model's performance on the test data to assess accuracy and loss.
+
+![evaluate](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/evaluate.png?raw=true)
+
+And this was our results: 
+
+![result m2](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/result%20m2.png?raw=true)
+
+### Pros and Cons per Model
+
+## Machine Learning Model 1 (Predictive Analytics in Healthcare: Unveilig Insights into Heart Disease Risk, Deep Learning Model)
+
+Pros:
+
+*Data Integration: Utilizes a broad range of patient data, offering a comprehensive view of individual health profiles.*
+*Versatility: Capable of analyzing various risk factors simultaneously, making it adaptable to different healthcare settings.*
+
+
+Cons:
+
+*Complexity: Requires significant preprocessing of data, which can be time-consuming and resource-intensive.*
+*Dependency on Data Quality: Highly dependent on the availability and accuracy of input data, which can affect its reliability.*
+
+## Machine Learning Model 2 (Heart Images Machine Learning)
+
+Pros:
+
+*High Accuracy: Employs VGG19, known for its effectiveness in image classification, leading to high accuracy in detecting heart disease from images.*
+*Enhanced Learning from Visual Data: Benefits from deep learning capabilities, particularly in handling complex image data for diagnostics.*
+
+
+Cons:
+
+*Computational Intensity: Requires significant computational resources to train and run, which might not be feasible in all healthcare settings.*
+*Dependency on Data Quality: Have variables results depending on the quality and quantity of the data. / More images, higher accuracy.*
+
+### Conclusions
+
+-Superior Model Performance: The second model, using advanced VGG19, outperforms the first in accuracy due to its sophisticated image processing capabilities.
+-Importance of Data Quality: Effective data preprocessing is crucial as both models' performance heavily relies on the quality and preparation of the input data.
+-Healthcare Impact: These machine learning models demonstrate significant potential for improving early diagnosis and treatment of heart disease, highlighting the transformative impact of AI in healthcare.
+
+You can find the powerpoint by clicking at the URL. [URL]([URL_TO_POWERPOINT](https://docs.google.com/presentation/d/15HNU5THFQh5I-im8LF2gnfeBbU3lbYejorq5JHJM_kk/edit#slide=id.p))
+ 
+
+
