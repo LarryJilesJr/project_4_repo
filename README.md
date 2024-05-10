@@ -142,7 +142,7 @@ This is how the map looks.
 ![map look ](https://github.com/emely-zelaya/Photos_group-Project4/blob/main/map%20look.png?raw=true)
 
 
-### Machine Learning Model 1 (Predictive Analytics in Healthcare: Unveilig Insights into Heart Disease Risk, Deep Learning Model)
+### Machine Learning Model 1 (Predictive Analytics in Healthcare: Unveiling Insights into Heart Disease Risk, Deep Learning Model)
 
 Now we are continuing to explain our notebook "project_4_model". This notebook focuses on building and training a deep learning model using TensorFlow to predict the risk of heart disease based on the preprocessed data.
 
@@ -273,7 +273,7 @@ And this was our results:
 
 ## Pros and Cons per Model
 
-### Machine Learning Model 1 (Predictive Analytics in Healthcare: Unveilig Insights into Heart Disease Risk, Deep Learning Model)
+### Machine Learning Model 1 (Predictive Analytics in Healthcare: Unveiling Insights into Heart Disease Risk, Deep Learning Model)
 
 Pros:
 
